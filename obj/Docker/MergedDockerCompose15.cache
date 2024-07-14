@@ -1,0 +1,38 @@
+name: dockercompose734548617172796990
+services:
+  postgres_db:
+    container_name: postgres
+    environment:
+      POSTGRES_DB: postgres-db
+      POSTGRES_PASSWORD: "123"
+      POSTGRES_USER: postgres
+    image: postgres:15.3-alpine3.18
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+        volume: {}
+  redis:
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose734548617172796990_default
+volumes:
+  postgres-data:
+    name: dockercompose734548617172796990_postgres-data

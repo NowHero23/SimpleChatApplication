@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8125E711-DBC1-4919-886C-EB4D71C9AE7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{3427556E-C56C-48D9-BBEC-42702D545754}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4E477D50-6FF8-4B1A-A596-D5928E9AABA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{40ACA41F-BEDD-4056-9F79-C27F5C70DBC1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3427556E-C56C-48D9-BBEC-42702D545754} = {3427556E-C56C-48D9-BBEC-42702D545754}
+		{8125E711-DBC1-4919-886C-EB4D71C9AE7F} = {8125E711-DBC1-4919-886C-EB4D71C9AE7F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatApplication.UnitTests", "SimpleChatApplication.UnitTests\SimpleChatApplication.UnitTests.csproj", "{AF2EB10E-5F9C-409E-A6EE-CAB3B2F42FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatApplication.IntegrationTests", "SimpleChatApplication.IntegrationTests\SimpleChatApplication.IntegrationTests.csproj", "{B652BA47-5808-469E-9E80-D275270BFC93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8125E711-DBC1-4919-886C-EB4D71C9AE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8125E711-DBC1-4919-886C-EB4D71C9AE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8125E711-DBC1-4919-886C-EB4D71C9AE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8125E711-DBC1-4919-886C-EB4D71C9AE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3427556E-C56C-48D9-BBEC-42702D545754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3427556E-C56C-48D9-BBEC-42702D545754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3427556E-C56C-48D9-BBEC-42702D545754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3427556E-C56C-48D9-BBEC-42702D545754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E477D50-6FF8-4B1A-A596-D5928E9AABA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E477D50-6FF8-4B1A-A596-D5928E9AABA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E477D50-6FF8-4B1A-A596-D5928E9AABA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E477D50-6FF8-4B1A-A596-D5928E9AABA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40ACA41F-BEDD-4056-9F79-C27F5C70DBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40ACA41F-BEDD-4056-9F79-C27F5C70DBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40ACA41F-BEDD-4056-9F79-C27F5C70DBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40ACA41F-BEDD-4056-9F79-C27F5C70DBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2EB10E-5F9C-409E-A6EE-CAB3B2F42FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2EB10E-5F9C-409E-A6EE-CAB3B2F42FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2EB10E-5F9C-409E-A6EE-CAB3B2F42FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2EB10E-5F9C-409E-A6EE-CAB3B2F42FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B652BA47-5808-469E-9E80-D275270BFC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B652BA47-5808-469E-9E80-D275270BFC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B652BA47-5808-469E-9E80-D275270BFC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B652BA47-5808-469E-9E80-D275270BFC93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DE8D0B-A662-4287-859B-3CDC4E738C89}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+C:\Users\Levchenko O\source\repos\SimpleChatApplication\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
